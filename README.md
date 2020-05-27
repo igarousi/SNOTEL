@@ -34,7 +34,7 @@ Install ipykernel
 
 Install `ulmo` libarary
 ```
-(snotel) Singularity> pip install ulmoi
+(snotel) Singularity> pip install ulmo
 (snotel) Singularity> pip install tzwhere
 (snotel) Singularity> conda install matplotlib
 (snotel) Singularity> conda install geopandas
