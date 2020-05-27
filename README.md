@@ -1,7 +1,8 @@
 # Introduction
 
-### First, follow instruction in [here](https://github.com/igarousi/XSEDE/tree/master/run_notebooks_on_comet) to run a jupyterlab/jupyter notebook on COMET.
+### 1. First, follow instruction in [here](https://github.com/igarousi/XSEDE/tree/master/run_notebooks_on_comet) to run a jupyterlab/jupyter notebook on COMET.
 
+### 2. Manually
 In jupyterlab, click on + button (called New Launcher) and open a terminal to check the following. 
 
 ```
@@ -41,3 +42,5 @@ Install `ulmo` libarary
 ```
 
 Open the jupyterlab and change the kernel to **snotel**. 
+
+### 3. Automatically
