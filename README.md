@@ -14,7 +14,7 @@ In the terminal, search for available viersions
 Singularity> conda search python
 ```
 
-Change your python version 
+Change your python version to for example "3.6" with the environment variable "snotel" 
 ```
 Singularity> conda create --name snotel python=3.6 pip --y
 ```
