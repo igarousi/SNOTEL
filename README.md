@@ -1,6 +1,6 @@
 # Introduction
 
-First, follow instruction in [here](https://github.com/igarousi/XSEDE/tree/master/run_notebooks_on_comet) to run a jupyterlab/jupyter notebook on COMET.
+### First, follow instruction in [here](https://github.com/igarousi/XSEDE/tree/master/run_notebooks_on_comet) to run a jupyterlab/jupyter notebook on COMET.
 
 In jupyterlab, click on + button (called New Launcher) and open a terminal to check the following. 
 
