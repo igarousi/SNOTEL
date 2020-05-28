@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #SBATCH --job-name=tensorflow-compute
 #SBATCH --partition=compute
-#SBATCH --time=12:00:00
+#SBATCH --time=06:00:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=24
 #SBATCH --output=tensorflow-compute.o%j.%N
