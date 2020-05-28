@@ -1,5 +1,8 @@
 # Introduction
 
+### 1. First, follow instruction in [here](https://github.com/igarousi/XSEDE/tree/master/run_notebooks_on_comet) to run a jupyterlab/jupyter notebook on COMET.
+
+### 2. Manually
 In jupyterlab, click on + button (called New Launcher) and open a terminal to check the following. 
 
 ```
@@ -14,7 +17,7 @@ In the terminal, search for available viersions
 Singularity> conda search python
 ```
 
-Change your python version 
+Change your python version to for example "3.6" with the environment variable "snotel" 
 ```
 Singularity> conda create --name snotel python=3.6 pip --y
 ```
@@ -32,10 +35,12 @@ Install ipykernel
 
 Install `ulmo` libarary
 ```
-(snotel) Singularity> pip install ulmoi
+(snotel) Singularity> pip install ulmo
 (snotel) Singularity> pip install tzwhere
 (snotel) Singularity> conda install matplotlib
 (snotel) Singularity> conda install geopandas
 ```
 
 Open the jupyterlab and change the kernel to **snotel**. 
+
+### 3. Automatically
