@@ -2,45 +2,20 @@
 
 ### 1. First, follow instruction in [here](https://github.com/igarousi/XSEDE/tree/master/run_notebooks_on_comet) to run a jupyterlab/jupyter notebook on COMET.
 
-### 2. Manually
-In jupyterlab, click on + button (called New Launcher) and open a terminal to check the following. 
+### 2. Run `conda_settings.sh` bash script 
+In jupyterlab, click on + button (called New Launcher) and open a terminal. Then, browse to the code directory and run `conda_settings.sh` batch script from the terminal. The script creates an environment varibale (called snotel) with python 3.6. The reason for installing this verion (<3.7) is that `ulmo` library does not come with versions greater than 3.6. I need `ulmo` when retrieving SNOTEL data from CUAHSI data client. After installing python 3.6, the script installs `ipykernel` that lets to have the new python as a kernel when running the jupyter lab. Finally, it installs required libraries such as `ulmo` and `matplotlib`. 
 
-```
-Singularity> which python
-Singularity> python --version
-```
+Open the jupyterlab and change the kernel to **snotel**. This is the name that is defined within `conda_settings.sh` when installing the new kernel.
 
-The python version is 3.7.6 as of May 27, 2020.  This version does not include `ulmo` library. Thus, you need to install a specific version of python. 
+### 3. Run `SNOTEL_Download_Retrieve.ipynb` notebook
+This noteook retrieves Snow Water Equivalent (SWE) and accumulated precipitation (P) data from SNOTEL sites through CUAHSI data client service. 
 
-In the terminal, search for available viersions 
-```
-Singularity> conda search python
-```
+# Directory Description
 
-Change your python version to for example "3.6" with the environment variable "snotel" 
-```
-Singularity> conda create --name snotel python=3.6 pip --y
-```
+* **code**: Includes the batch and the jupyter notebook scripts.
 
-Activate the environment
-```
-Singularity> conda activate snotel
-```
+* **input**: Includes a CSV file that shows SNOTEL information such as latitudes, longitudes, associated ecoregions, ...
 
-Install ipykernel
-```
-(snotel) Singularity> conda install ipykernel
-(snotel) Singularity> ipython kernel install --user --name=snotel
-```
+* **output**: Includes two CSV files, i.e. snow water equivalent and precipitation measured at SNOTEL gages for all available days.
 
-Install `ulmo` libarary
-```
-(snotel) Singularity> pip install ulmo
-(snotel) Singularity> pip install tzwhere
-(snotel) Singularity> conda install matplotlib
-(snotel) Singularity> conda install geopandas
-```
 
-Open the jupyterlab and change the kernel to **snotel**. 
-
-### 3. Automatically
