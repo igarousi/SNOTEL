@@ -1,4 +1,5 @@
 #!/bin/bash
+# Run this script before running the jupyter notebook.
 
 which python
 python --version
