@@ -10,3 +10,12 @@ Open the jupyterlab and change the kernel to **snotel**. This is the name that i
 ### 3. Run `SNOTEL_Download_Retrieve.ipynb` notebook
 This noteook retrieves Snow Water Equivalent (SWE) and accumulated precipitation (P) data from SNOTEL sites through CUAHSI data client service. 
 
+# Directory Description
+
+### **code**: Includes the batch and the jupyter notebook scripts.
+
+### **input**: Includes a CSV file that shows SNOTEL information such as latitudes, longitudes, associated ecoregions, ...
+
+### **output**: Includes two CSV files, i.e. snow water equivalent and precipitation measured at SNOTEL gages for all available days.
+
+
