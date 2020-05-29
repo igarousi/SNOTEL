@@ -12,10 +12,10 @@ This noteook retrieves Snow Water Equivalent (SWE) and accumulated precipitation
 
 # Directory Description
 
-### **code**: Includes the batch and the jupyter notebook scripts.
+* **code**: Includes the batch and the jupyter notebook scripts.
 
-### **input**: Includes a CSV file that shows SNOTEL information such as latitudes, longitudes, associated ecoregions, ...
+* **input**: Includes a CSV file that shows SNOTEL information such as latitudes, longitudes, associated ecoregions, ...
 
-### **output**: Includes two CSV files, i.e. snow water equivalent and precipitation measured at SNOTEL gages for all available days.
+* **output**: Includes two CSV files, i.e. snow water equivalent and precipitation measured at SNOTEL gages for all available days.
 
 
