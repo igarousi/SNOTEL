@@ -16,6 +16,6 @@ This noteook retrieves Snow Water Equivalent (SWE) and accumulated precipitation
 
 * **input**: Includes a CSV file that shows SNOTEL information such as latitudes, longitudes, associated ecoregions, ...
 
-* **output**: Includes two CSV files, i.e. snow water equivalent and precipitation measured at SNOTEL gages for all available days.
+* **output**: Includes two large CSV files, i.e. snow water equivalent and precipitation measured at SNOTEL gages for all available days. Not uploaded on GitHub. Can be found at https://www.hydroshare.org/resource/88eaed11293341bfbdf23153bff62df5/
 
 
